@@ -1,13 +1,13 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Shahla Hassan              |
+| Date         | 02/20/2023                 |
+| Course       | Spring                     |
+| Assignment # |  #2                        |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+This assignment is about a delivery system where a delivery request coming to a store must be notified to all the drivers available.
 
 # GitHub Repository Link:
 https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
@@ -19,11 +19,21 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+
+It is Very flexible. Many objects of Shops, DeliveryRequests and Drivers can be easily added and removed in the future.
+
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+
+I have used Observer Design Pattern. Created 2 interfaces - Shop and Driver. Created 3 classes - ShopClass implementing Shop, DriverClass implementing Driver Interface and DeliveryRequest. Created an arraylist of DeliveryRequests in ShopClass and DriverClass to store the deliveryrequests coming in.
+Testing is done by comparing an array of same Delivery Request IDs of length 6 with an array whose value is obtained when the driver is updated with the delivery ID.
+
+
 - Describe how you have avoided duplicated code and why it is important.
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+I have used Observer Design pattern. In this assignment, when 1 delivery request is added to the store(subject), then all the drivers(observers) must be notified.
 
 
 # Maven Commands
